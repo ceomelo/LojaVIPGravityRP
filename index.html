@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="logop.png" type="image/png" />
+  <title>Loja VIP - Gravity RP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Loja VIP - Gravity RP</h1>
+            <!-- Categoria VIPs -->
+            <div class="category">
+                <h2>💳・VIPS</h2>
+                <div class="products">
+                    <div class="product" data-id="1" data-name="VIP Bronze" data-price="15.00" data-description="Acesso exclusivo a eventos e serviços básicos.">
+                        <img src="vip.png" alt="VIP Bronze" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>💳・Bronze</h2>
+                        <p>R$15,00</p>
+                        <button class="buy-btn" onclick="openModal('VIP Bronze', 'R$ 15.000 a cada 30 Min e Lime Scooter.', 'R$15,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="VIP Ouro" data-price="65.00" data-description="Acesso a eventos e serviços premium.">
+                        <img src="vip.png" alt="VIP Ouro" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>💳・Ouro</h2>
+                        <p>R$65,00</p>
+                        <button class="buy-btn" onclick="openModal('VIP Ouro', 'R$ 35.000 a cada 30 Min, Attachs, Cor da Arma e Honda Hornet.', 'R$65,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="VIP Diamante" data-price="80.00" data-description="Acesso total e exclusivo com serviços completos.">
+                        <img src="vip.png" alt="VIP Diamante" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>💳・Diamante</h2>
+                        <p>R$80,00</p>
+                        <button class="buy-btn" onclick="openModal('VIP Diamante', 'R$ 60.000 a cada 30 Min, Spotify, FixVip, Attachs, Rgbcar, Cor da Arma, Trocar de roupa, ex: jaqueta 50 etc e Porsche 911 Turbo S.', 'R$80,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="4" data-name="VIP Rubi" data-price="120.00" data-description="Acesso VIP com benefícios exclusivos ilimitados.">
+                        <img src="vip.png" alt="VIP Rubi" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>💳・Rubi</h2>
+                        <p>R$120,00</p>
+                        <button class="buy-btn" onclick="openModal('VIP Rubi', 'R$ 100.000 a cada 30 Min, Spotify, FixVip, Attachs, Rgbcar, Cor da Arma, Loja de Roupas e  Lamborghini Urus.', 'R$120,00')">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>🎵・Spotify</h2>
+                <div class="products">
+                    <div class="product" data-id="1" data-name="🎵・(15 dias)" data-price="20.00" data-description="Todas as músicas ilimitadas, durante 15 dias.">
+                        <img src="spotify.png" alt="🎵・(15 dias)" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🎵・(15 dias)</h2>
+                        <p>R$20,00</p>
+                        <button class="buy-btn" onclick="openModal('🎵・(15 dias)', 'Todas as músicas ilimitadas, durante 15 dias.', 'R$20,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="🎵・(30 dias)" data-price="45.00" data-description="Todas as músicas ilimitadas, durante 30 dias.">
+                        <img src="spotify.png" alt="🎵・(30 dias)" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🎵・(30 dias)</h2>
+                        <p>R$45,00</p>
+                        <button class="buy-btn" onclick="openModal('🎵・(30 dias)', 'Todas as músicas ilimitadas, durante 30 dias.', 'R$45,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="🎵・(60 dias)" data-price="75.00" data-description="Todas as músicas ilimitadas, durante 2 meses.">
+                        <img src="spotify.png" alt="🎵・(60 dias)" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🎵・(60 dias)</h2>
+                        <p>R$75,00</p>
+                        <button class="buy-btn" onclick="openModal('🎵・(60 dias)', 'Todas as músicas ilimitadas, durante 2 meses.', 'R$75,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="4" data-name="🎵・(Até o Wipe)" data-price="130.00" data-description="Todas as músicas ilimitadas, durante 15 dias.">
+                        <img src="spotify.png" alt="🎵・(Até o Wipe)" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🎵・(Até o Wipe)</h2>
+                        <p>R$130,00</p>
+                        <button class="buy-btn" onclick="openModal('🎵・(Até o Wipe)', 'Todas as músicas ilimitadas, Até o Wipe.', 'R$130,00')">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Categoria Carros -->
+            <div class="category">
+                <h2>🚗・Carros</h2>
+                <div class="products">
+                    <!-- Adicione seus carros aqui -->
+                    <div class="product" data-id="1" data-name="Mercedes Vision Avtr" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                        <img src="avtr.png" alt="Mercedes Vision Avtr" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Mercedes Vision Avtr</h2>
+                        <p>R$85,00</p>
+                        <button class="buy-btn" onclick="openModal('Mercedes Vision Avtr', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="Nissan Silvia S15" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                        <img src="monalisa.png" alt="Nissan Silvia S15" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Nissan Silvia S15</h2>
+                        <p>R$95,00</p>
+                        <button class="buy-btn" onclick="openModal('Nissan Silvia S15', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="Nissan R34 Blue Dragon" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                      <img src="r34blue.png" alt="Nissan R34 Blue Dragon" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                      <h2>Nissan R34 Blue Dragon</h2>
+                      <p>R$75,00</p>
+                      <button class="buy-btn" onclick="openModal('Nissan R34 Blue Dragon', 'Força, luxo e performance sem igual.', 'R$75,00')">Adquirir</button>
+                  </div>
+                  <div class="product" data-id="4" data-name="Nissan R34" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                    <img src="r34.png" alt="Nissan R34" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                    <h2>Nissan R34</h2>
+                    <p>R$75,00</p>
+                    <button class="buy-btn" onclick="openModal('Nissan R34', 'Força, luxo e performance sem igual.', 'R$70,00')">Adquirir</button>
+                </div>
+                <div class="product" data-id="5" data-name="Nissan R35" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                  <img src="r35.png" alt="Nissan R35" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                  <h2>Nissan R35</h2>
+                  <p>R$75,00</p>
+                  <button class="buy-btn" onclick="openModal('Nissan R35', 'Força, luxo e performance sem igual.', 'R$70,00')">Adquirir</button>
+              </div>
+              <div class="product" data-id="6" data-name="Nissan 370z" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+                <img src="370z.png" alt="Nissan 370z" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                <h2>Nissan 370z</h2>
+                <p>R$65,00</p>
+                <button class="buy-btn" onclick="openModal('Nissan 370z', 'Força, luxo e performance sem igual.', 'R$65,00')">Adquirir</button>
+            </div>
+            <div class="product" data-id="7" data-name="Toyota Supra MK4" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+              <img src="supra.png" alt="Toyota Supra MK4" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+              <h2>Toyota Supra MK4</h2>
+              <p>R$75,00</p>
+              <button class="buy-btn" onclick="openModal('Toyota Supra MK4', 'Força, luxo e performance sem igual.', 'R$70,00')">Adquirir</button>
+          </div>
+          <div class="product" data-id="8" data-name="Porsche GT3 RS" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="gt3rs.png" alt="Porsche GT3 RS" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Porsche GT3 RS</h2>
+            <p>R$90,00</p>
+            <button class="buy-btn" onclick="openModal('Porsche GT3 RS', 'Força, luxo e performance sem igual.', 'R$90,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="9" data-name="Porsche 911 Carrera T" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="911.png" alt="Porsche 911 Carrera T" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Porsche 911 Carrera T</h2>
+            <p>R$85,00</p>
+            <button class="buy-btn" onclick="openModal('Porsche 911 Carrera T', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="10" data-name="Porsche 718 Boxster" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="718.png" alt="Porsche 718 Boxster" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Porsche 718 Boxster</h2>
+            <p>R$85,00</p>
+            <button class="buy-btn" onclick="openModal('Porsche 718 Boxster', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="11" data-name="Porsche Panamera Touring" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="panamera.png" alt="Porsche Panamera Touring" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Porsche Panamera Touring</h2>
+            <p>R$80,00</p>
+            <button class="buy-btn" onclick="openModal('Porsche Panamera Touring', 'Força, luxo e performance sem igual.', 'R$80,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="12" data-name="Porsche Macan" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="macan.png" alt="Porsche Macan" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Porsche Macan</h2>
+            <p>R$85,00</p>
+            <button class="buy-btn" onclick="openModal('Porsche Macan', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="13" data-name="Bugatti Divo" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="divo.png" alt="Bugatti Divo" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Bugatti Divo</h2>
+            <p>R$110,00</p>
+            <button class="buy-btn" onclick="openModal('Bugatti Divo', 'Força, luxo e performance sem igual.', 'R$110,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="14" data-name="Ferrari 599xx Evo" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="599xxevo.png" alt="Ferrari 599xx Evo" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Ferrari 599xx Evo</h2>
+            <p>R$120,00</p>
+            <button class="buy-btn" onclick="openModal('Ferrari 599xx Evo', 'Força, luxo e performance sem igual.', 'R$120,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="15" data-name="Ferrari 458 Pista" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="458.png" alt="Ferrari 458 Pista" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Ferrari 458 Pista</h2>
+            <p>R$95,00</p>
+            <button class="buy-btn" onclick="openModal('Ferrari 458 Pista', 'Força, luxo e performance sem igual.', 'R$95,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="16" data-name="Lamborghini Huracán" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="huracan.png" alt="Lamborghini Huracán" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Lamborghini Huracán</h2>
+            <p>R$90,00</p>
+            <button class="buy-btn" onclick="openModal('Lamborghini Huracán', 'Força, luxo e performance sem igual.', 'R$90,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="17" data-name="Lamborghini STO" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="huracansto.png" alt="Lamborghini STO" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Lamborghini STO</h2>
+            <p>R$120,00</p>
+            <button class="buy-btn" onclick="openModal('Lamborghini STO', 'Força, luxo e performance sem igual.', 'R$120,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="18" data-name="Lamborghini Urus" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="urus.png" alt="Lamborghini Urus" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Lamborghini Urus</h2>
+            <p>R$85,00</p>
+            <button class="buy-btn" onclick="openModal('Lamborghini Urus', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="19" data-name="Lamborghini Urus 6x6" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="urus6x6.png" alt="Lamborghini Urus 6x6" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Lamborghini Urus 6x6</h2>
+            <p>R$150,00</p>
+            <button class="buy-btn" onclick="openModal('Lamborghini Urus 6x6', 'Força, luxo e performance sem igual.', 'R$150,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="20" data-name="Rolls Royce 6x6" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="rolls6x6.png" alt="Rolls Royce 6x6" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Rolls Royce 6x6</h2>
+            <p>R$150,00</p>
+            <button class="buy-btn" onclick="openModal('Rolls Royce 6x6', 'Força, luxo e performance sem igual.', 'R$150,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="21" data-name="Mustang Mach-E" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="mache.png" alt="Mustang Mach-E" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Mustang Mach-E</h2>
+            <p>R$60,00</p>
+            <button class="buy-btn" onclick="openModal('Mustang Mach-E', 'Força, luxo e performance sem igual.', 'R$60,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="22" data-name="Range Rover Evoque" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="evoque.png" alt="Range Rover Evoque" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Range Rover Evoque</h2>
+            <p>R$65,00</p>
+            <button class="buy-btn" onclick="openModal('Range Rover Evoque', 'Força, luxo e performance sem igual.', 'R$65,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="23" data-name="Range Rover Velar" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="velar.png" alt="Range Rover Velar" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Range Rover Velar</h2>
+            <p>R$80,00</p>
+            <button class="buy-btn" onclick="openModal('Range Rover Velar', 'Força, luxo e performance sem igual.', 'R$80,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="24" data-name="Tesla Cybertruck" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="cybertruck.png" alt="Tesla Cybertruck" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Tesla Cybertruck</h2>
+            <p>R$85,00</p>
+            <button class="buy-btn" onclick="openModal('Tesla Cybertruck', 'Força, luxo e performance sem igual.', 'R$85,00')">Adquirir</button>
+        </div>
+        <div class="product" data-id="25" data-name="Tesla Prior" data-price="200.00" data-description="Força, luxo e performance sem igual.">
+            <img src="prior.png" alt="Tesla Prior" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+            <h2>Tesla Prior</h2>
+            <p>R$75,00</p>
+            <button class="buy-btn" onclick="openModal('Tesla Prior', 'Força, luxo e performance sem igual.', 'R$75,00')">Adquirir</button>
+        </div>
+                    <!-- Adicionar outros carros conforme necessário -->
+                </div>
+            </div>
+    
+            <!-- Categoria Motos -->
+            <div class="category">
+                <h2>🏍️・Motos</h2>
+                <div class="products">
+                    <!-- Adicione suas motos aqui -->
+                    <div class="product" data-id="1" data-name="BMW R1200" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="r1200.png" alt="BMW R1200" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>BMW R1200</h2>
+                        <p>R$75,00</p>
+                        <button class="buy-btn" onclick="openModal('BMW R1200', 'Velocidade e agressividade para dominar as ruas.', 'R$75,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="Kawasaki Ninja H2R" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="h2r.png" alt="Kawasaki Ninja H2R" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Kawasaki Ninja H2R</h2>
+                        <p>R$90,00</p>
+                        <button class="buy-btn" onclick="openModal('Kawasaki Ninja H2R', 'Velocidade e agressividade para dominar as ruas.', 'R$90,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="Honda Hornet" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="hornet.png" alt="Honda Hornet" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Honda Hornet</h2>
+                        <p>R$60,00</p>
+                        <button class="buy-btn" onclick="openModal('Honda Hornet', 'Velocidade e agressividade para dominar as ruas.', 'R$60,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="4" data-name="Yamaha XJ6" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="xj6.png" alt="Yamaha XJ6" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Yamaha XJ6</h2>
+                        <p>R$60,00</p>
+                        <button class="buy-btn" onclick="openModal('Yamaha XJ6', 'Velocidade e agressividade para dominar as ruas.', 'R$60,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="5" data-name="Honda CB500X" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="cb500x.png" alt="Honda CB500X" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Honda CB500X</h2>
+                        <p>R$60,00</p>
+                        <button class="buy-btn" onclick="openModal('Honda CB500X', 'Velocidade e agressividade para dominar as ruas.', 'R$60,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="6" data-name="Honda África Twin" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="africatwin.png" alt="Honda África Twin" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Honda África Twin</h2>
+                        <p>R$70,00</p>
+                        <button class="buy-btn" onclick="openModal('Honda África Twin', 'Velocidade e agressividade para dominar as ruas.', 'R$70,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="7" data-name="BMW S1000RR" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="s1000rr.png" alt="BMW S1000RR" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>BMW S1000RR</h2>
+                        <p>R$75,00</p>
+                        <button class="buy-btn" onclick="openModal('BMW S1000RR', 'Velocidade e agressividade para dominar as ruas.', 'R$75,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="8" data-name="Motorizada Motadinha" data-price="50.00" data-description="Velocidade e agressividade para dominar as ruas.">
+                        <img src="bikelete.png" alt="Motorizada Motadinha" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Motorizada Motadinha</h2>
+                        <p>R$50,00</p>
+                        <button class="buy-btn" onclick="openModal('Motorizada Motadinha', 'Velocidade e agressividade para dominar as ruas.', 'R$50,00')">Adquirir</button>
+                    </div>
+                    <!-- Adicionar outras motos conforme necessário -->
+                </div>
+            </div>
+                    <div class="category">
+                <h2>🚁・Helicópteros</h2>
+                <div class="products">
+                    <div class="product" data-id="1" data-name="🚁・Volatus" data-price="15.00" data-description="Acesso exclusivo a eventos e serviços básicos.">
+                        <img src="volatus.png" alt="🚁・Volatus" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🚁・Volatus</h2>
+                        <p>R$185,00</p>
+                        <button class="buy-btn" onclick="openModal('🚁・Volatus', 'Força, luxo e performance sem igual.', 'R$185,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="🚁・Maverick" data-price="15.00" data-description="Acesso exclusivo a eventos e serviços básicos.">
+                        <img src="maverick.png" alt="🚁・Maverick" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🚁・Maverick</h2>
+                        <p>R$175,00</p>
+                        <button class="buy-btn" onclick="openModal('🚁・Maverick', 'Força, luxo e performance sem igual.', 'R$175,00')">Adquirir</button>
+                    </div>
+                        <div class="product" data-id="3" data-name="🚁・Frogger" data-price="15.00" data-description="Acesso exclusivo a eventos e serviços básicos.">
+                        <img src="frogger.png" alt="🚁・Frogger" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🚁・Frogger</h2>
+                        <p>R$165,00</p>
+                        <button class="buy-btn" onclick="openModal('🚁・Frogger', 'Força, luxo e performance sem igual.', 'R$165,00')">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <h2>🔫・VIPS Fac</h2>
+                <div class="products">
+                    <div class="product" data-id="1" data-name="🔫・Iniciante" data-price="15.00" data-description="Acesso exclusivo a eventos e serviços básicos.">
+                        <img src="fac1.png" alt="🔫・Iniciante" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🔫・Iniciante</h2>
+                        <p>R$140,00</p>
+                        <button class="buy-btn" onclick="openModal('🔫・Iniciante', 'Caminhão Mule 600kg, Mustang Mach-E e BMW S1000RR.', 'R$140,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="🔫・Chefão" data-price="65.00" data-description="Acesso a eventos e serviços premium.">
+                        <img src="fac2.png" alt="🔫・Chefão" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🔫・Chefão</h2>
+                        <p>R$180,00</p>
+                        <button class="buy-btn" onclick="openModal('🔫・Chefão', 'Caminhão Mule 600kg, Porsche Macan e Honda África Twin.', 'R$180,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="🔫・Ultimate" data-price="80.00" data-description="Acesso total e exclusivo com serviços completos.">
+                        <img src="fac3.png" alt="🔫・Ultimate" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>🔫・Ultimate</h2>
+                        <p>R$250,00</p>
+                        <button class="buy-btn" onclick="openModal('🔫・Ultimate', 'Caminhão Mule 600kg, BMW X6M Blindada e BMW R1200.', 'R$250,00')">Adquirir</button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Categoria Mansões -->
+            <div class="category">
+                <h2>🏡・Mansões de Luxo</h2>
+                <div class="products">
+                    <!-- Adicione suas mansões aqui -->
+                    <div class="product" data-id="1" data-name="Mansão da Praia" data-price="500.00" data-description="Vista para o mar e luxo incomparável.">
+                        <img src="casa1.png" alt="Mansão da Praia" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Mansão da Praia</h2>
+                        <p>R$150,00</p>
+                        <button class="buy-btn" onclick="openModal('Mansão da Praia', 'Vista para o mar e luxo incomparável.', 'R$150,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="2" data-name="Mansão do Mar" data-price="500.00" data-description="Vista para o mar e luxo incomparável.">
+                        <img src="casa2.png" alt="Mansão do Mar" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Mansão do Mar</h2>
+                        <p>R$250,00</p>
+                        <button class="buy-btn" onclick="openModal('Mansão do Mar', 'Vista para o mar e luxo incomparável.', 'R$250,00')">Adquirir</button>
+                    </div>
+                    <div class="product" data-id="3" data-name="Mansão Business" data-price="500.00" data-description="Vista para o mar e luxo incomparável.">
+                        <img src="casa3.png" alt="Mansão Business" width="100%" style="border-radius: 15px; margin-bottom: 10px;">
+                        <h2>Mansão Business</h2>
+                        <p>R$350,00</p>
+                        <button class="buy-btn" onclick="openModal('Mansão Business', 'Afastada de perigos e luxo incomparável.', 'R$350,00')">Adquirir</button>
+                    </div>
+                    <!-- Adicionar outras mansões conforme necessário -->
+                </div>
+            </div>
+    
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    
+                    <!-- QR Code - Inicialmente oculto -->
+                    <div class="qr-code" id="qr-code">
+                        <h3>Chave PIX: (11) 94390-2900</h3>
+                        <img src="pix.png" alt="QR Code" style="width: 200px;">
+                    </div>
+    
+                    <form id="purchase-form">
+                        <input type="text" id="discordName" placeholder="Nome no Discord" required><br><br>
+                        <input type="text" id="cityID" placeholder="ID na City" required><br><br>
+                        <input type="text" id="bankName" placeholder="Nome no Extrato Bancário" required><br><br>
+                        <button type="submit" class="buy-btn">Finalizar Compra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

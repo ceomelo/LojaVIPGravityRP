@@ -1,0 +1,224 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #0a0a0a, #101010 80%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Container principal */
+.container {
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 30px;
+  padding: 50px;
+  max-width: 1300px;
+  width: 100%;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 0 60px rgba(130, 223, 223, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Títulos */
+h1, .category h2 {
+  text-align: center;
+  text-shadow: 0 0 20px rgba(162, 212, 201, 0.5);
+}
+
+h1 {
+  font-size: 48px;
+  color: #00ffd0;
+  margin-bottom: 40px;
+}
+
+.category {
+  margin-top: 60px;
+}
+
+.category h2 {
+  font-size: 30px;
+  color: #f5d000;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(136, 116, 0, 0.7);
+}
+
+/* Lista de produtos */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+
+/* Card de produto */
+.product {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 260px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.2);
+}
+
+.product::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0,255,200,0.1), transparent 70%);
+  animation: rotateBackground 12s linear infinite;
+  z-index: 0;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 255, 200, 0.3);
+}
+
+.product h2, .product p {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.product p {
+  font-size: 17px;
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+
+/* Botão glam */
+.buy-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 26px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #695a01, #fff200);
+  border: none;
+  border-radius: 10px;
+  color: #1a1a1a;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(128, 117, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.buy-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.4), transparent);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.buy-btn:hover::after {
+  left: 130%;
+}
+
+.buy-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(112, 103, 2, 0.9);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: #1b1b1b;
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 450px;
+  margin: 8% auto;
+  color: #fff;
+  box-shadow: 0 0 40px rgba(0, 255, 200, 0.5);
+  animation: slideIn 0.4s ease-out;
+}
+
+.close {
+  font-size: 28px;
+  color: #ccc;
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #796702;
+}
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border: 2px solid #8a7501;
+  box-shadow: 0 0 8px rgba(245, 208, 0, 0.5);
+}
+
+.qr-code {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes rotateBackground {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
